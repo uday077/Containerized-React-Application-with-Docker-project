@@ -60,11 +60,12 @@ docker run -d -p 3000:3000 containerized-react-app
 
 
 Dockerfile Explanation
+
 Here's the Dockerfile used for this project:
 
 
 # Use the official Node.js image as the base image
-FROM node:16
+FROM node:20
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -83,13 +84,16 @@ EXPOSE 3000
 CMD ["npm", "start"]
 
 
-Usage
+**Usage**
+
 Clone the repository and install dependencies.
 Build the Docker image using the Dockerfile.
 Run the Docker container to see the React app hosted within it.
 
 
+
 Technologies Used
+
 React (via create-react-app)
 Docker
 Node.js
